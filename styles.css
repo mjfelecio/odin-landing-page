@@ -117,17 +117,18 @@ body {
     padding: 48px;
 }
 
-
-
-
-
-
 /* =============
    Quote Styles
    =============*/
 
 .quote-container {
     background-color: #E5E7EB;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quote {
@@ -135,6 +136,16 @@ body {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
+    width: 900px;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
+    padding-top: 8px;
+    padding-right: 300px;
 }
 
 
