@@ -185,3 +185,10 @@ button, .call-to-action-card {
     background-color: #3882F6;
 }
 
+.footer {
+    width: 100%;
+    height: 80px;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 35px;
+}
