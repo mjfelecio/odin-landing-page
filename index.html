@@ -3,75 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Landing Page</title>
   </head>
   <body>
     <div class="header-container flex-center">
       <div class="header">
-        <div class="header-logo">Header Logo</div>
+        <img
+          class="header-logo"
+          src="./img/logo.png"
+          alt="Webpage Logo"
+          width="70px"
+          height="70px"
+        />
         <ul>
-          <li class="header-link"><a href="#">header-link-one</a></li>
-          <li class="header-link"><a href="#">header-link-two</a></li>
-          <li class="header-link"><a href="#">header-link-three</a></li>
+          <li class="header-link"><a href="#">Dev Blogs</a></li>
+          <li class="header-link"><a href="#">Random Blogs</a></li>
+          <li class="header-link"><a href="#">About</a></li>
         </ul>
       </div>
     </div>
     <div class="hero-container flex-center">
       <div class="hero">
         <div class="hero-content">
-          <h1>This website is awesome</h1>
+          <h1>A blog site for useful and not so useful knowledge!</h1>
           <p>
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
+            Learn programming insights from a beginner and get to learn about
+            random things that I like!
           </p>
           <button>Sign up</button>
         </div>
-        <div class="hero-image">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg==" alt="" />
-        </div>
+        <img src="./img/hero-img.jpg" alt="Cat in front of computer" />
       </div>
     </div>
     <div class="info-container">
-      <h1 class="info-header">This is some random information</h1>
+      <h1 class="info-header">Here, you'll discover</h1>
       <div class="card-row flex-center">
         <div class="card">
-          <div class="image-placeholder"></div>
-          <p class="card-text">this is some subtext under an illustration or image</p>
+          <img src="./img/laptop.png" alt="Laptop" />
+          <p class="card-text">
+            Programming insights from an ignorant beginner
+          </p>
         </div>
         <div class="card">
-          <div class="image-placeholder"></div>
-          <p class="card-text">this is some subtext under an illustration or image</p>
+          <img src="./img/osu.png" alt="Games" />
+          <p class="card-text">
+            Gaming tips from someone who doesn't play games
+          </p>
         </div>
         <div class="card">
-          <div class="image-placeholder"></div>
-          <p class="card-text">this is some subtext under an illustration or image</p>
+          <img src="./img/music.jpeg" alt="Songs" />
+          <p class="card-text">Song recommendations for japanese music</p>
         </div>
         <div class="card">
-          <div class="image-placeholder"></div>
-          <p class="card-text">this is some subtext under an illustration or image</p>
-        </div>  
+          <img src="./img/LN.jpg" alt="Non-Fiction Books" />
+          <p class="card-text">LN, WN, Manga, and Manhwa recommendations</p>
+        </div>
       </div>
     </div>
     <div class="quote-section flex-center">
       <div class="quote-container flex-center">
         <p class="quote">
-          This is an inspiring quote, or a testimonal from a customer. 
-          Maybe it's just filling up space, or maybe people will actually read it.
-          Who knows? All I know is that it looks nice. 
+          To achieve greatness, start where you are, use what you have, and do
+          what you can.
         </p>
-        <p class="quote-author">- Thor, God of Thunder</p>  
+        <p class="quote-author">- Arthur Ashe</p>
       </div>
     </div>
     <div class="call-to-action-container flex-center">
       <div class="call-to-action-card">
         <div class="call-to-action">
-          <h3>Call to action! It's time!</h3>
-          <p>Sign up for our product by clicking that button over there!</p>
+          <h3>Sign up to the newsletter?</h3>
+          <p>
+            It won't cost you anything, just your inbox getting spammed by
+            random stuff
+          </p>
         </div>
-        <button>Sign up</button>
+        <button>Sure thing</button>
       </div>
     </div>
-    <div class="footer">Copyright © The Odin Project 2025</div>
+    <div class="footer">
+      <p>
+        Made with ❤️ by <a href="https://github.com/mjfelecio">mjfelecio</a>
+      </p>
+    </div>
   </body>
 </html>
